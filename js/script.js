@@ -39,6 +39,7 @@ const hourses2 = document.querySelector('.hourses2');
 
 const modallBlock = document.querySelector('.modall__block');
 const closedModal = document.querySelector('.closedModal');
+console.log(window.innerWidth);
 if(window.innerWidth > 769){
   setTimeout(() => {
     document.body.style.overflow = "hidden";
