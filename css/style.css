@@ -2724,7 +2724,7 @@ footer {
     margin: 0 35px;
   }
   .header__main__text__btn {
-    margin-left: 2.5%;
+    text-align: center;
   }
   .btn__call2 {
     display: block;
@@ -2897,9 +2897,6 @@ footer {
   .btn2 {
     width: 300px;
     height: 54px;
-  }
-  .link {
-    margin-left: 8%;
   }
   .header__main {
     height: 610px;
