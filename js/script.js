@@ -37,6 +37,28 @@ const prompte4 = document.querySelector('.prompt4');
 const hourses = document.querySelector('.hourses');
 const hourses2 = document.querySelector('.hourses2');
 
+const modallBlock = document.querySelector('.modall__block');
+const closedModal = document.querySelector('.closedModal');
+if(window.innerWidth > 769){
+  setTimeout(() => {
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100%";
+    setTimeout(() => {
+      let core = document.documentElement.scrollTop - 20 +'px';
+      modallBlock.style.top = core;
+      modallBlock.style.display = 'flex';
+    }, 150);
+  }, 30000);
+  modallBlock.addEventListener('click',(e)=>{
+    if(e.target === modallBlock || e.target === closedModal){
+      modallBlock.style.display = 'none';
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
+    }
+  });
+}
+
+
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -50,7 +72,6 @@ for (let i = 0; i < acc.length; i++) {
 }
 
 aroundTheClock.addEventListener('mouseover',(e)=>{
-  // if(e.target == )
   console.log(e.target);
   prompte.style.display = 'block';
 });

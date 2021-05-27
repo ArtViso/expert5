@@ -6,6 +6,59 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+.modall__block {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 101vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.modall__block .closedModal {
+  position: absolute;
+  top: 26px;
+  right: 22px;
+}
+
+.modall__block__content {
+  position: relative;
+  padding: 41px 0 0 60px;
+  box-sizing: border-box;
+  width: 962px;
+  height: 308px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.modall__block__content h1 {
+  font-weight: bold;
+  font-size: 38px;
+  margin-bottom: 17px;
+}
+
+.modall__block__content p {
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 29px;
+}
+
+.modall__block .googlePlay {
+  margin-right: 12px;
+}
+
+.modall__block .mobTekk {
+  top: -45px;
+  right: 70px;
+  position: absolute;
 }
 
 header {
@@ -2387,6 +2440,7 @@ footer {
   }
   .block__tell__attachment__box .link {
     margin-top: 17px;
+    margin-left: 280px;
   }
   .block__tell__attachment__box .text p {
     margin-left: 280px;
