@@ -162,6 +162,9 @@ select {
     fill: $color_blue;
 }
 
+.chevron :hover {
+    color: $color_blue;
+}
 
 .chevron li {
     margin: 2.1% 3.6% 0 0;
@@ -1449,7 +1452,11 @@ footer {
     background: $color_blue;
     color: $color_white;
 
+    &:hover {
+        color: $color_white;
+    }
 }
+
 
 .block__tell__attachment {
     margin-top: 8%;
