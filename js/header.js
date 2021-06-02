@@ -1,3 +1,7 @@
+
+const contentMenu3 = document.querySelector('.content__menu');
+const contentMenuBlock3 = document.querySelector('.content__menu__block');
+
 const li1 = document.querySelector('.li1');
 const li2 = document.querySelector('.li2');
 const li3 = document.querySelector('.li3');
@@ -26,6 +30,9 @@ li1.addEventListener('mouseover',()=>{
   });
   li3.addEventListener('mouseover',()=>{
     iw3.src = '/icon/iw3.svg';
+    contentMenu3.style.display = 'block';
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100%";
   });
   li3.addEventListener('mouseout',()=>{
     iw3.src = './icon/plumbing.svg';
@@ -47,4 +54,13 @@ li1.addEventListener('mouseover',()=>{
   });
   li6.addEventListener('mouseout',()=>{
     iw6.src = './icon/hammer.svg';
+  });
+
+
+  contentMenuBlock3.addEventListener('mouseover',(e)=>{
+    if(e.target == document.querySelector('.back_content')){
+      contentMenu3.style.display = 'none';
+      document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
+    } 
   });
