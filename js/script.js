@@ -40,7 +40,7 @@ if(window.innerWidth > 769){
   }, 30000);
   modallBlock.addEventListener('click',(e)=>{
     if(e.target === modallBlock || e.target === closedModal){
-      modallBlock.style.display = 'none';
+    modallBlock.style.display = 'none';
     document.body.style.overflow = "auto";
     document.body.style.height = "auto";
     }
