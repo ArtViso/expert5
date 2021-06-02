@@ -238,6 +238,8 @@ select {
     height: 550px;
 }
 
+
+
 .header__main__center {
     max-width: 1200px;
     margin: 0 auto;
@@ -271,6 +273,7 @@ select {
         font-size: 16px;
         line-height: 150%;
         color:#666666;
+        width: 80%;
     }
 
     button {
@@ -2777,6 +2780,10 @@ footer {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
     }
 
+    .blockgradi__thanks{
+        z-index: -1;
+    }
+
     .line {
         margin-top: -5px;
         position: fixed;
@@ -3060,6 +3067,10 @@ footer {
         height: 800px;
     }
 
+    .header__main__thanks {
+        height: 950px;
+    }
+
     .chevron li {
         margin: 9%;
     }
@@ -3074,7 +3085,7 @@ footer {
     }
 
     .header__main__text__thanks {
-        margin: 49% 12%;
+        margin: 55% 10%;
     }
 
 
@@ -3196,7 +3207,15 @@ footer {
     .header__main__back__thanks img {
         width: 548px;
         height: 657px;
-        top: 0;
+        top: 13px;
+        left: 12%;
+    }
+
+    .header__main__text__up__thanks {
+        width: 95%;
+        p {
+            width: 95%;
+        }
     }
 
     .header__main__text__btn {
