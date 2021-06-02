@@ -254,7 +254,7 @@ select {
     margin-left: 2.7%;
 }
 
-.header__main__text__up__thanks{
+.header__main__text__up__thanks {
     padding: 25px;
     background: #F3F4F9;
     border-radius: 6px;
@@ -265,12 +265,12 @@ select {
     justify-content: space-between;
     margin-bottom: 34px;
 
-    p{
+    p {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 150%;
-        color:#666666;
+        color: #666666;
     }
 
     button {
@@ -283,7 +283,7 @@ select {
         font-weight: 600;
         font-size: 14px;
         line-height: 140%;
-        color:#222222;
+        color: #222222;
     }
 }
 
@@ -349,10 +349,11 @@ select {
 
 .header__main__text__btn__thanks {
     margin-top: 34px;
- 
+
     button {
         margin-bottom: 15px;
     }
+
     .btn2 {
         font-style: normal;
         font-weight: 600;
@@ -437,9 +438,11 @@ select {
             display: flex;
             justify-content: space-between;
             max-width: 1200px;
+
             a:active {
                 color: $color_blue;
             }
+
             &__content1 {
                 margin-left: 2.2%;
 
@@ -1749,8 +1752,9 @@ footer {
     }
 }
 
-.block__tell__attachment_no_margin_top{
+.block__tell__attachment_no_margin_top {
     margin-top: 0;
+
     .attachment {
         left: 30px;
     }
@@ -2631,6 +2635,10 @@ footer {
     }
 }
 
+.links {
+    margin-top: 25px;
+}
+
 .hourses2 {
     width: 36px;
     height: 36px;
@@ -2640,6 +2648,7 @@ footer {
 }
 
 @media screen and (max-width: 1025px) {
+
     .head__main__city {
         margin-right: 14%;
     }
@@ -2736,6 +2745,10 @@ footer {
 @media screen and (max-width: 769px) {
     .logo {
         display: none;
+    }
+
+    .links {
+        margin-left: 36%;
     }
 
     .block__tell__attachment {
@@ -3208,6 +3221,10 @@ footer {
 @media screen and (max-width: 426px) {
     .section1 {
         margin: 0 35px;
+    }
+
+    .links {
+        margin: 25px auto;
     }
 
     .header__main__text__btn {

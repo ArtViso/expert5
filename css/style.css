@@ -2550,6 +2550,10 @@ footer {
   border-top: 10px solid black;
 }
 
+.links {
+  margin-top: 25px;
+}
+
 .hourses2 {
   width: 36px;
   height: 36px;
@@ -2637,6 +2641,9 @@ footer {
 @media screen and (max-width: 769px) {
   .logo {
     display: none;
+  }
+  .links {
+    margin-left: 36%;
   }
   .block__tell__attachment {
     height: 144px;
@@ -3008,6 +3015,9 @@ footer {
 @media screen and (max-width: 426px) {
   .section1 {
     margin: 0 35px;
+  }
+  .links {
+    margin: 25px auto;
   }
   .header__main__text__btn {
     text-align: center;
