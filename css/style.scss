@@ -437,7 +437,9 @@ select {
             display: flex;
             justify-content: space-between;
             max-width: 1200px;
-
+            a:active {
+                color: $color_blue;
+            }
             &__content1 {
                 margin-left: 2.2%;
 

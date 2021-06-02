@@ -436,6 +436,10 @@ select {
   max-width: 1200px;
 }
 
+.content__menu__block__box a:active {
+  color: #1117A3;
+}
+
 .content__menu__block__box__content1 {
   margin-left: 2.2%;
 }
