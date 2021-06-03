@@ -3102,6 +3102,10 @@ footer {
   .header__main__text {
     margin-top: 70%;
   }
+  .header__main__text__thanks {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .header__main__back img {
     top: 6%;
     margin-top: 8%;
@@ -3217,6 +3221,25 @@ footer {
   .header__main__text__head h1 br {
     display: none;
   }
+  .header__main__text__up__thanks {
+    width: 85%;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 0;
+  }
+  .header__main__text__up__thanks button {
+    margin-top: 16px;
+  }
+  .header__main__text__head__thanks h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: left;
+  }
+  .header__main__text__head__thanks h1 br {
+    display: initial;
+  }
   .header__main__text__main p {
     width: 95%;
     font-size: 15px;
@@ -3229,6 +3252,12 @@ footer {
   .header__main__text__main p br {
     display: none;
   }
+  .header__main__text__main__thanks p {
+    text-align: left;
+  }
+  .header__main__text__btn__thanks .btn2 {
+    width: 100%;
+  }
   .man {
     width: 430px;
   }
@@ -3238,6 +3267,9 @@ footer {
   }
   .header__main {
     height: 610px;
+  }
+  .header__main__thanks {
+    height: 920px;
   }
   .close img {
     width: 20px;
