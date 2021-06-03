@@ -30,9 +30,11 @@ li1.addEventListener('mouseover',()=>{
   });
   li3.addEventListener('mouseover',()=>{
     iw3.src = '/icon/iw3.svg';
+    if(window.innerWidth >= 769){
     contentMenu3.style.display = 'block';
     document.body.style.overflow = "hidden";
     document.body.style.height = "100%";
+    }
   });
   li3.addEventListener('mouseout',()=>{
     iw3.src = './icon/plumbing.svg';
@@ -58,9 +60,9 @@ li1.addEventListener('mouseover',()=>{
 
 
   contentMenuBlock3.addEventListener('mouseover',(e)=>{
-    if(e.target == document.querySelector('.back_content')){
-      contentMenu3.style.display = 'none';
-      document.body.style.overflow = "auto";
-      document.body.style.height = "auto";
-    } 
-  });
+      if(e.target == document.querySelector('.back_content')){
+        contentMenu3.style.display = 'none';
+        document.body.style.overflow = "auto";
+        document.body.style.height = "auto";
+      } 
+  })
