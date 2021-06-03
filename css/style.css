@@ -417,6 +417,7 @@ select {
 }
 
 .content__menu__block {
+  position: relative;
   height: 313px;
   background: #F3F4F9;
 }
@@ -424,8 +425,8 @@ select {
 .content__menu__block::after {
   content: '';
   position: absolute;
-  left: 43.5%;
-  top: 120px;
+  left: 44%;
+  top: -20px;
   border: 10px solid transparent;
   border-bottom: 10px solid #F3F4F9;
 }
@@ -2567,11 +2568,17 @@ footer {
   .hrvert {
     left: 58.2%;
   }
+  .content__menu__block::after {
+    left: 42%;
+  }
 }
 
 @media screen and (max-width: 1025px) {
   .head__main__city {
     margin-right: 14%;
+  }
+  .content__menu__block::after {
+    left: 38%;
   }
   .content__menu__block__box__content1 .container {
     width: 320px;
