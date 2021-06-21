@@ -1,4 +1,3 @@
-
 const contentMenu3 = document.querySelector('.content__menu');
 const contentMenuBlock3 = document.querySelector('.content__menu__block');
 
@@ -15,6 +14,15 @@ const iw3 = document.querySelector('.iw3');
 const iw4 = document.querySelector('.iw4');
 const iw5 = document.querySelector('.iw5');
 const iw6 = document.querySelector('.iw6');
+
+const burger = document.querySelector('.burger');
+const clos = document.querySelector('.close');
+const chevron = document.querySelector('.chevron');
+const header = document.querySelector('.header');
+const headerMain = document.querySelector('.header__main');
+const main = document.querySelector('main');
+const footer = document.querySelector('footer');
+
 
 li1.addEventListener('mouseover',()=>{
     iw1.src = './icon/iw1.svg';
@@ -67,4 +75,28 @@ li1.addEventListener('mouseover',()=>{
       } 
   })
 
-  //for thanks.html
+  burger.addEventListener('click',()=>{
+    chevron.style.display = 'block';
+    burger.style.display = 'none';
+    clos.style.display = 'block';
+    header.style.display = 'none';
+    if(main && footer) {
+      main.style.display = 'none';
+      footer.style.display = 'none';
+    }      
+    headerMain.style.display = 'none';
+  });
+  clos.addEventListener('click',()=>{
+    chevron.style.display = 'none';
+    burger.style.display = 'block';
+    clos.style.display = 'none';
+    header.style.display='block';
+    if(main && footer) {
+      main.style.display = 'block';
+      footer.style.display = 'block';
+    }      
+    headerMain.style.display = 'block';     
+  });
+
+
+
