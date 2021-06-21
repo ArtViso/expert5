@@ -1,0 +1,22 @@
+.section_4 {
+    margin-bottom: 50px;
+}
+
+.s6 {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 769px) {
+    .header__main {
+        height: 840px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .header__main {
+        height: 640px;
+    }
+    .section_6 {
+        margin-top: 10px;
+    }
+}
