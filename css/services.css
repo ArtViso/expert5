@@ -26,6 +26,79 @@
   left: 52%;
 }
 
+.remont {
+  background-color: #F3F4F9;
+}
+
+.remont_block {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.remont_block_text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.remont_block_text h3 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 140%;
+  text-align: center;
+  color: #222222;
+  text-align: left;
+}
+
+.remont_block_text_item_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.remont_block_text_item_name .name {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  color: #222222;
+  width: 85%;
+}
+
+.remont_block_text_item_name .price {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  color: #222222;
+}
+
+.remont_block_text_item .sub {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #666666;
+  width: 91%;
+}
+
+.remont_block_image img {
+  border-radius: 20px;
+}
+
+.remont_block:last-child {
+  padding-bottom: 100px;
+}
+
 @media screen and (max-width: 769px) {
   .header__main {
     height: 840px;

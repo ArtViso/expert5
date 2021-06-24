@@ -1,12 +1,9 @@
 .section_4 {
     margin-bottom: 50px;
 }
-
 .s6 {
     margin-bottom: 50px;
 }
-
-
 .header__main {
     height: 600px;
     &__text{
@@ -26,6 +23,77 @@
         }
     }
 }
+.remont{
+    background-color: #F3F4F9;
+    &_block{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 90px;
+        &_text{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            h3 {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 46px;
+                line-height: 140%;
+                text-align: center;
+                color: #222222;
+                text-align: left;
+            }
+
+            &_item {
+                &_name {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:space-between;
+                    .name {
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 140%; 
+                        color: #222222;
+                        width: 85%;
+                    }
+                    .price {
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 140%; 
+                        color: #222222;
+                    }
+                }
+                
+                .sub {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #666666;
+                    width: 91%;
+                }
+            }
+        }
+        &_image {
+            img {
+                border-radius: 20px;
+            }
+        }
+        &:last-child {
+            padding-bottom: 100px;
+        }    
+    }
+}
+
 
 @media screen and (max-width: 769px) {
     .header__main {
