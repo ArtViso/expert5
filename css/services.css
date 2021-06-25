@@ -137,6 +137,117 @@
   flex-direction: row-reverse;
 }
 
+.services_grid {
+  background-color: #F3F4F9;
+  padding: 30px 0;
+}
+
+.services_grid .s_grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.services_grid .s_grid h3 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 140%;
+  text-align: center;
+  color: #222222;
+}
+
+.services_grid .s_grid_block {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px 0;
+}
+
+.services_grid .s_grid_block_item {
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.services_grid .s_grid_block_item .name {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+  opacity: 0;
+}
+
+.services_grid .s_grid_block_item .description {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+  opacity: 0;
+}
+
+.services_grid .s_grid_block_item:hover {
+  box-shadow: inset 0 0 0 1000px rgba(17, 23, 163, 0.8);
+}
+
+.services_grid .s_grid_block_item:hover .name, .services_grid .s_grid_block_item:hover .description {
+  opacity: 1;
+}
+
+.services_grid .s_grid_block #item_1 {
+  background-image: url("../img/services_grid_1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.services_grid .s_grid_block #item_2 {
+  background-image: url("../img/services_grid_2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.services_grid .s_grid_block #item_3 {
+  background-image: url("../img/services_grid_3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.services_grid .s_grid_block #item_4 {
+  background-image: url("../img/services_grid_4.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.services_grid .s_grid_block #item_5 {
+  background-image: url("../img/services_grid_5.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.services_grid .s_grid_block #item_6 {
+  background-image: url("../img/services_grid_6.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
 @media screen and (max-width: 769px) {
   .header__main {
     height: 840px;
@@ -198,6 +309,16 @@
   }
   .remont .reversed {
     flex-direction: column;
+  }
+  .services_grid .s_grid h3 {
+    font-size: 40px;
+  }
+  .services_grid .s_grid_block {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .services_grid .s_grid_block_item {
+    height: 310px;
   }
 }
 
