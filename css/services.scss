@@ -85,10 +85,35 @@
         }
         &_image {
             width: 100%;
-            img {
-                border-radius: 20px;
-                width: 100%;
-            }
+            border-radius: 25px;            
+        }
+        #r1{
+            background-image: url('../img/remont1_large.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            height: 528px;
+        }
+        #r2{
+            background-image: url('../img/remont2_large.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            height: 529px;
+        }
+        #r3{
+            background-image: url('../img/remont3_large.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            height: 548px;
+        }
+        #r4{
+            background-image: url('../img/remont4_large.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            height: 262px;
         }
         &:last-child {
             padding-bottom: 100px;
@@ -126,7 +151,6 @@
         }
     }
     .remont{
-
         &_block{
             position: relative;
             flex-direction: column;
@@ -139,11 +163,27 @@
                     top: 10px;
                     text-align: center;
                     width: calc(100% - 128px);
+                    font-size: 40px;
                 }
             }
             &_image {
-                margin-top: 160px;
-
+                margin-top: 160px;                
+            }
+            #r1{
+                background-image: url('../img/remont1_medium.png');
+                height: 407px;
+            }
+            #r2{
+                background-image: url('../img/remont2_medium.png');
+                height: 406px;
+            }
+            #r3{
+                background-image: url('../img/remont3_medium.png');
+                height: 406px;
+            }
+            #r4{
+                background-image: url('../img/remont4_medium.png');
+                height: 351px;
             }
             &:first-child, &:last-child {
                 h3 {
@@ -192,6 +232,50 @@
     }
     .header__main__text__btn button {
         width: 335px;
+    }
+    .remont {
+        &_block {
+            padding: 0 37px;
+            &_text {
+                h3 {                    
+                    width: calc(100% - 74px);
+                    font-size: 28px;
+                }
+                &_item {
+                    &_name {
+                        .name{
+                            font-size: 17px;
+                            width: 75%;
+                        }
+                        .price {
+                            font-size: 17px;
+                        }
+                    }
+                    .sub{
+                        font-size: 15px;
+                    }
+                }
+            }
+            &_image {
+                
+            }
+            #r1{
+                height: 190px;
+                background-size: 100% 100%;
+            }
+            #r2{
+                height: 190px;
+                background-size: 100% 100%;
+            }
+            #r3{
+                height: 190px;
+                background-size: 100% 100%;
+            }
+            #r4{
+                 height: 163px;
+                 background-size: 100% 100%;
+            }
+        }
     }
 }
 
