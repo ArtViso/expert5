@@ -206,46 +206,50 @@
   opacity: 1;
 }
 
-.services_grid .s_grid_block #item_1 {
+.services_grid .s_grid #item_1 {
   background-image: url("../img/services_grid_1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
-.services_grid .s_grid_block #item_2 {
+.services_grid .s_grid #item_2 {
   background-image: url("../img/services_grid_2.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
-.services_grid .s_grid_block #item_3 {
+.services_grid .s_grid #item_3 {
   background-image: url("../img/services_grid_3.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
-.services_grid .s_grid_block #item_4 {
+.services_grid .s_grid #item_4 {
   background-image: url("../img/services_grid_4.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
-.services_grid .s_grid_block #item_5 {
+.services_grid .s_grid #item_5 {
   background-image: url("../img/services_grid_5.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
-.services_grid .s_grid_block #item_6 {
+.services_grid .s_grid #item_6 {
   background-image: url("../img/services_grid_6.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+}
+
+.services_grid .s_grid_slider {
+  display: none;
 }
 
 @media screen and (max-width: 769px) {
@@ -384,6 +388,73 @@
   .remont_block #r4 {
     height: 163px;
     background-size: 100% 100%;
+  }
+  .services_grid .s_grid_block {
+    display: none;
+  }
+  .services_grid .s_grid .section_7_button {
+    display: none;
+  }
+  .services_grid .s_grid_slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 425px;
+    margin-top: 25px;
+  }
+  .services_grid .s_grid_slider .service_slider_item {
+    text-align: center;
+  }
+  .services_grid .s_grid_slider .service_slider_item .s_grid_block_item {
+    width: 100%;
+    height: 300px;
+    border: radius 10px;
+  }
+  .services_grid .s_grid_slider .service_slider_item .s_grid_block_item:hover {
+    box-shadow: inset 0 0 0 1000px rgba(17, 23, 163, 0);
+  }
+  .services_grid .s_grid_slider .service_slider_item .name {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: #333333;
+    margin-top: 22px;
+  }
+  .services_grid .s_grid_slider .service_slider_item .description {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+    color: #666666;
+    margin-top: 9px;
+  }
+  .services_grid .s_grid_slider .right_button {
+    position: absolute;
+    right: 15px;
+    z-index: 5;
+    top: 140px;
+    width: 32px;
+    height: 32px;
+  }
+  .services_grid .s_grid_slider .right_button img {
+    width: 100%;
+    height: 100%;
+  }
+  .services_grid .s_grid_slider .left_button {
+    position: absolute;
+    left: 15px;
+    z-index: 5;
+    top: 140px;
+    width: 32px;
+    height: 32px;
+  }
+  .services_grid .s_grid_slider .left_button img {
+    width: 100%;
+    height: 100%;
   }
 }
 
