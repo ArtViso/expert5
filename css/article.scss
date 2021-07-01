@@ -210,10 +210,155 @@
             
         }
         .mobile_app_add {
+            padding-top: 50px;
+            padding-left: 46px;
+            padding-right: 45px;
             margin-top: 30px;
             height: 731px;
             background: #C5DCF2;
             border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            justify-content:space-between;
+            .main_part {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 140%;
+                    text-align: center;
+                    color: #222222;
+                    margin-top: 30px;
+                    
+                }
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        margin-bottom: 14px;
+                    }
+                    margin-bottom: 20px;
+                }
+               
+            }
+            .man {
+                img {
+                   height: 100%;
+                }
+                #article_tablet_man {
+                    display: none;
+                }
+                #article_default_man {
+                        
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .article {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .article {
+        flex-direction: column;
+        padding: 0 32px;
+        &_main {
+            width: 100%;
+            h1 {
+                font-size: 40px;
+            }
+            ol {
+                li {
+                    &::before {
+                        width: 32px;
+                        height: 32px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+        &_add {
+            width: 100%;
+            margin-left: 0;
+            .categories {
+                border: 0;
+            }
+            .mobile_app_add {
+                flex-direction: row;
+                height: 446px;
+                .man {
+                    height: 100%;
+                    #article_tablet_man {
+                        display: block;
+                    }
+                    #article_default_man {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) { 
+    .article {
+        padding: 0 24px;
+        &_main {
+            h1 {
+                font-size: 32px;
+            }
+            p.article_main_default_text {
+                font-size: 18px;
+            }
+            &_important_text {
+                font-size: 18px;
+                padding-left: 0 20px;
+            }
+            ol li, ul li {
+                font-size: 16px;
+            }
+            &_share {
+                p {
+                    font-size: 18px;
+                }
+                flex-direction: column;
+            }
+        }
+        &_add {
+            .mobile_app_add {
+                flex-direction: column;
+                height: 629px;
+                .main_part {
+                    .logo {
+                        img {
+                            width: 173px;
+                            height: 50px;
+                        }                        
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }                
+               
+                .man {
+                    #article_tablet_man {
+                        display: none;                       
+                    }
+                    #article_default_man {
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }
