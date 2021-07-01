@@ -1,0 +1,127 @@
+.article_main {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.article_main h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 140%;
+  color: #222222;
+}
+
+.article_main h3 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 170%;
+  color: #222222;
+}
+
+.article_main_info {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.article_main_info span.date {
+  color: #666666;
+}
+
+.article_main_info span.time_to_read {
+  color: #1117A3;
+}
+
+.article_main p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: #222222;
+}
+
+.article_main p.article_main_default_text {
+  font-size: 20px;
+}
+
+.article_main ul {
+  list-style: none;
+}
+
+.article_main ul li {
+  margin: 5px 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: #222222;
+}
+
+.article_main ul li::before {
+  content: "\2022";
+  color: #1117A3;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.article_main ol {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0 0 0 45px;
+  padding: 15px 0 5px 0;
+  font-size: 16px;
+}
+
+.article_main ol li {
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0 0 10px 20px;
+  line-height: 1.4;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 170%;
+  color: #222222;
+}
+
+.article_main ol li::before {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -38px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: #1117A3;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.article_main_important_text {
+  border-left: 4px #1117A3 solid;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.article_main_share p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 170%;
+  color: #1117A3;
+}
