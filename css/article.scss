@@ -1,3 +1,7 @@
+.line {
+    top: 5px;
+}
+
 .article_section {
     width: 100%;
     margin-bottom: 50px;
@@ -6,6 +10,7 @@
 .article_block {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 40px;
     .article {    
         width: 100%;
         display: flex;
@@ -480,6 +485,7 @@
 @media screen and (max-width: 769px) {
     .article_block {
         padding: 0 32px;
+        margin-top: 140px;
         .article {
             flex-direction: column;       
             &_main {

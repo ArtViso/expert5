@@ -22,7 +22,8 @@ const header = document.querySelector('.header');
 const headerMain = document.querySelector('.header__main');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
-
+const menu3 = document.querySelector('.menu3');
+const menu2 = document.querySelector('.menu2');
 
 li1.addEventListener('mouseover',()=>{
     iw1.src = './icon/iw1.svg';
@@ -83,8 +84,13 @@ li1.addEventListener('mouseover',()=>{
     if(main && footer) {
       main.style.display = 'none';
       footer.style.display = 'none';
-    }      
-    headerMain.style.display = 'none';
+    }
+    if(headerMain) {
+      headerMain.style.display = 'none';
+    }          
+    menu3.style.display = 'none';
+    // menu2.style.display = 'none';
+
   });
   clos.addEventListener('click',()=>{
     chevron.style.display = 'none';
@@ -94,8 +100,13 @@ li1.addEventListener('mouseover',()=>{
     if(main && footer) {
       main.style.display = 'block';
       footer.style.display = 'block';
-    }      
-    headerMain.style.display = 'block';     
+    }
+    if(headerMain) {
+      headerMain.style.display = 'block'; 
+    }       
+    menu3.style.display = 'flex';
+    // menu2.style.display = 'block';    
+
   });
 
 
