@@ -106,6 +106,80 @@ body {
   position: absolute;
 }
 
+.call__master__modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 101vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.call__master__modal .closedModal {
+  position: absolute;
+  top: 26px;
+  right: 22px;
+}
+
+.call__master__modal__content {
+  position: relative;
+  padding: 41px 59px 64px 60px;
+  box-sizing: border-box;
+  width: 560px;
+  height: 459px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.call__master__modal__content h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.call__master__modal__content .choose__call {
+  display: flex;
+  flex-direction: row;
+}
+
+.call__master__modal__content .choose__call__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.call__master__modal__content .choose__call__item__block {
+  width: 200px;
+  height: 200px;
+  background: #F3F4F9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.call__master__modal__content .choose__call__item__block .white {
+  display: none;
+}
+
+.call__master__modal__content .choose__call__item__text {
+  margin-top: 18px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.call__master__modal__content .choose__call__item:first-child {
+  margin-right: 41px;
+}
+
 header {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
