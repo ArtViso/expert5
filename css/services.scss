@@ -399,7 +399,7 @@
     }
 
     .section_6 {
-        margin-top: 10px;
+        margin-top: 35px;
     }
 
     .header__main__text__btn button {
@@ -425,6 +425,8 @@
 
                         .price {
                             font-size: 17px;
+                            text-decoration: none;
+                            color: #222222;
                         }
                     }
 
@@ -562,5 +564,8 @@
 @media screen and (max-width: 321px) {
     .header__main__text__btn button {
         width: 250px;
+    }
+    .remont_block_text_item_name .name {
+        width: 70%;
     }
 }
