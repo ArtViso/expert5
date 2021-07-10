@@ -177,8 +177,124 @@ body {
             }
         }
     }
-}
+    .call__master__urgent {
+        display: none;
+        position: relative;
+        padding: 41px 45px 60px 45px;
+        box-sizing: border-box;
+        width: 560px;
+        // height: 573px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        h1 {
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 25px;
+            margin-top: 0;
+            color:#222222;
+        }
 
+        &__reason {
+            background: #EDF5FE;
+            border-radius: 10px;
+            width: 470px;
+            height: 101px;
+            padding: 18px 22px;
+            border: none;
+            &::placeholder{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 140%;
+                color: #666666;
+            }
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 140%;
+            color:#222222;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+            resize: vertical;
+            max-height: 40vh;
+        }
+        &__name {
+            width: 470px;
+            height: 59px;
+            background: #EDF5FE;
+            border-radius: 10px;
+            padding: 19px 22px;
+            &::placeholder {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 140%;
+                color: #666666;
+            }
+            box-sizing: border-box;
+            margin-bottom: 13px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color:#222222;
+            border: none;
+        }
+        &__phone {
+            background: #EDF5FE;
+            border-radius: 10px;
+            width: 470px;
+            height: 59px;
+            border: none;
+            &::placeholder {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 140%;
+                color: #666666;
+            }
+            box-sizing: border-box;
+            margin-bottom: 13px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color:#222222;
+            margin-bottom: 21px;
+        }
+        &__btn {
+            background: #1117A3;
+            box-shadow: 0px 4px 30px rgba(17, 23, 163, 0.3);
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 17px;
+            color: #FFFFFF;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            border: none;
+            margin-bottom: 24px;
+        }
+        p {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: #666666;
+        }
+    }
+}
 
 
 

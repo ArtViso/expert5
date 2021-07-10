@@ -180,6 +180,131 @@ body {
   margin-right: 41px;
 }
 
+.call__master__modal .call__master__urgent {
+  display: none;
+  position: relative;
+  padding: 41px 45px 60px 45px;
+  box-sizing: border-box;
+  width: 560px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.call__master__modal .call__master__urgent h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 25px;
+  margin-top: 0;
+  color: #222222;
+}
+
+.call__master__modal .call__master__urgent__reason {
+  background: #EDF5FE;
+  border-radius: 10px;
+  width: 470px;
+  height: 101px;
+  padding: 18px 22px;
+  border: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #222222;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  resize: vertical;
+  max-height: 40vh;
+}
+
+.call__master__modal .call__master__urgent__reason::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.call__master__modal .call__master__urgent__name {
+  width: 470px;
+  height: 59px;
+  background: #EDF5FE;
+  border-radius: 10px;
+  padding: 19px 22px;
+  box-sizing: border-box;
+  margin-bottom: 13px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #222222;
+  border: none;
+}
+
+.call__master__modal .call__master__urgent__name::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.call__master__modal .call__master__urgent__phone {
+  background: #EDF5FE;
+  border-radius: 10px;
+  width: 470px;
+  height: 59px;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 13px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 21px;
+}
+
+.call__master__modal .call__master__urgent__phone::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.call__master__modal .call__master__urgent__btn {
+  background: #1117A3;
+  box-shadow: 0px 4px 30px rgba(17, 23, 163, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  color: #FFFFFF;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.call__master__modal .call__master__urgent p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #666666;
+}
+
 header {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
