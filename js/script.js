@@ -12,13 +12,15 @@ const closedModal = document.querySelector('.closedModal');
 
 if(window.innerWidth > 769){
   setTimeout(() => {
-    document.body.style.overflow = "hidden";
-    document.body.style.height = "100%";
-    setTimeout(() => {
-      let core = document.documentElement.scrollTop - 20 +'px';
-      modallBlock.style.top = core;
-      modallBlock.style.display = 'flex';
-    }, 150);
+    if(document.querySelector('.call__master__modal').style.display === 'none' || document.querySelector('.call__master__modal').style.display === '') {
+      document.body.style.overflow = "hidden";
+      document.body.style.height = "100%";
+      setTimeout(() => {
+        let core = document.documentElement.scrollTop - 20 +'px';
+        modallBlock.style.top = core;
+        modallBlock.style.display = 'flex';
+      }, 150);
+    }    
   }, 30000);
   modallBlock.addEventListener('click',(e)=>{
     if(e.target === modallBlock || e.target === closedModal){

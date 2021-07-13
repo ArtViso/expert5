@@ -314,6 +314,18 @@ body {
   color: #666666;
 }
 
+.call__master__modal .call__master__nonurgent__first {
+  display: none;
+}
+
+.call__master__modal .call__master__nonurgent__second {
+  display: none;
+}
+
+.call__master__modal .call__master__pay {
+  display: none;
+}
+
 header {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
@@ -3206,7 +3218,7 @@ footer {
     width: 30px;
   }
   .header__main {
-    height: 800px;
+    height: 830px;
   }
   .header__main__thanks {
     height: 950px;
@@ -3318,7 +3330,7 @@ footer {
   }
   .header__main__back img {
     left: 8%;
-    margin-top: 6%;
+    margin-top: 12%;
     width: 590px;
     height: 658px;
   }
