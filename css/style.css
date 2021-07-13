@@ -197,6 +197,7 @@ body {
   margin-bottom: 25px;
   margin-top: 0;
   color: #222222;
+  text-align: center;
 }
 
 .call__master__modal .call__master__urgent__reason {
@@ -325,8 +326,152 @@ body {
   border-radius: 10px;
 }
 
+.call__master__modal .call__master__nonurgent__first h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 41px;
+  margin-top: 0;
+  color: #222222;
+  text-align: center;
+}
+
+.call__master__modal .call__master__nonurgent__first h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 11px;
+  margin-top: 0;
+  color: #222222;
+}
+
+.call__master__modal .call__master__nonurgent__first__reason {
+  background: #EDF5FE;
+  border-radius: 10px;
+  width: 470px;
+  height: 101px;
+  padding: 18px 22px;
+  border: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #222222;
+  box-sizing: border-box;
+  margin-bottom: 29px;
+  resize: vertical;
+  max-height: 30vh;
+}
+
+.call__master__modal .call__master__nonurgent__first__reason::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.call__master__modal .call__master__nonurgent__first__address {
+  width: 470px;
+  height: 59px;
+  background: #EDF5FE;
+  border-radius: 10px;
+  padding: 19px 22px;
+  box-sizing: border-box;
+  margin-bottom: 13px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #222222;
+  border: none;
+}
+
+.call__master__modal .call__master__nonurgent__first__address::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.call__master__modal .call__master__nonurgent__first__date {
+  width: 470px;
+  height: 59px;
+  background: #EDF5FE;
+  border-radius: 10px;
+  padding: 19px 22px;
+  box-sizing: border-box;
+  border: none;
+  margin-bottom: 11px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #222222;
+}
+
+.call__master__modal .call__master__nonurgent__first__time {
+  width: 470px;
+  height: 59px;
+  background: #EDF5FE;
+  border-radius: 10px;
+  padding: 19px 22px;
+  box-sizing: border-box;
+  margin-bottom: 13px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #222222;
+  border: none;
+}
+
+.call__master__modal .call__master__nonurgent__first__time::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.call__master__modal .call__master__nonurgent__first__btn {
+  padding: 15px 32px 17px 32px;
+  background: #1117A3;
+  box-shadow: 0px 4px 30px rgba(17, 23, 163, 0.3);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 24px;
+  margin-left: auto;
+  display: block;
+  width: 134px;
+}
+
+.call__master__modal .call__master__nonurgent__first__btn span {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
 .call__master__modal .call__master__nonurgent__first__btn span::after {
   content: " →";
+  color: #FFFFFF;
+}
+
+.call__master__modal .call__master__nonurgent__first p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #666666;
 }
 
 .call__master__modal .call__master__nonurgent__second {
@@ -340,8 +485,94 @@ body {
   border-radius: 10px;
 }
 
+.call__master__modal .call__master__nonurgent__second h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 41px;
+  margin-top: 0;
+  color: #222222;
+  text-align: center;
+}
+
+.call__master__modal .call__master__nonurgent__second h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 11px;
+  margin-top: 0;
+  color: #222222;
+}
+
+.call__master__modal .call__master__nonurgent__second__name {
+  width: 470px;
+  height: 59px;
+  background: #EDF5FE;
+  border-radius: 10px;
+  padding: 19px 22px;
+  box-sizing: border-box;
+  margin-bottom: 13px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #222222;
+  border: none;
+}
+
+.call__master__modal .call__master__nonurgent__second__name::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.call__master__modal .call__master__nonurgent__second__phone {
+  background: #EDF5FE;
+  border-radius: 10px;
+  width: 470px;
+  height: 59px;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 13px;
+  padding: 20px;
+}
+
+.call__master__modal .call__master__nonurgent__second__phone__input {
+  background: #EDF5FE;
+  border: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #222222;
+}
+
+.call__master__modal .call__master__nonurgent__second__phone__input::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.call__master__modal .call__master__nonurgent__second__phone__select {
+  background: #EDF5FE;
+}
+
 .call__master__modal .call__master__nonurgent__second__btns .prev__btn span::before {
   content: "← ";
+}
+
+.call__master__modal .call__master__nonurgent__second p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #666666;
 }
 
 .call__master__modal .call__master__pay {
