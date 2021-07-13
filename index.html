@@ -53,10 +53,13 @@
             <h1>Срочный вызов</h1>
             <textarea class="call__master__urgent__reason name="u_reason" placeholder="Причина вызова. Расскажите, что у вас случилось?"></textarea>
             <input class="call__master__urgent__name" type="text" name="u_your_name" placeholder="Как вас зовут?">
-            <!-- <div class="call__master__urgent__phone">
-
-            </div> -->
-            <input class="call__master__urgent__phone" type="text" name="u_your_phone" placeholder="+380 (99) 999-99-99">
+            <div class="call__master__urgent__phone">
+                <select name="u_select_phone" class="call__master__urgent__phone__select">
+                    <option value="ua">ua</option>
+                    <option value="ru">ru</option>
+                </select>
+                <input class="call__master__urgent__phone__input" type="text" name="u_your_phone" placeholder="+380 (99) 999-99-99">
+            </div>
             <button class="call__master__urgent__btn">
                 Вызвать мастера
             </button>
@@ -1176,6 +1179,8 @@
     <script src="./js/price.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/choose_modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
+    <script src="./js/phone_number_mask.js"></script>    
     <script>
         $('.slider').slick({
             arrows: true,

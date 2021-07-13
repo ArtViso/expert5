@@ -260,21 +260,30 @@ body {
   border: none;
   box-sizing: border-box;
   margin-bottom: 13px;
+  padding: 20px;
+}
+
+.call__master__modal .call__master__urgent__phone__input {
+  background: #EDF5FE;
+  border: none;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #222222;
-  margin-bottom: 21px;
 }
 
-.call__master__modal .call__master__urgent__phone::placeholder {
+.call__master__modal .call__master__urgent__phone__input::placeholder {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
   color: #666666;
+}
+
+.call__master__modal .call__master__urgent__phone__select {
+  background: #EDF5FE;
 }
 
 .call__master__modal .call__master__urgent__btn {
