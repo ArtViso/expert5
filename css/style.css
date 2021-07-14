@@ -561,8 +561,64 @@ body {
   background: #EDF5FE;
 }
 
+.call__master__modal .call__master__nonurgent__second label {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  color: #666666;
+  display: block;
+}
+
+.call__master__modal .call__master__nonurgent__second__btns {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.call__master__modal .call__master__nonurgent__second__btns .prev__btn {
+  background: #5E62C0;
+  box-shadow: 0px 4px 30px rgba(17, 23, 163, 0.3);
+  border-radius: 5px;
+  border: none;
+  padding: 15px 29px 17px 25px;
+  cursor: pointer;
+}
+
+.call__master__modal .call__master__nonurgent__second__btns .prev__btn span {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
 .call__master__modal .call__master__nonurgent__second__btns .prev__btn span::before {
+  font-size: 16px;
   content: "← ";
+  color: #FFFFFF;
+}
+
+.call__master__modal .call__master__nonurgent__second__btns .pay__btn {
+  background: #1117A3;
+  box-shadow: 0px 4px 30px rgba(17, 23, 163, 0.3);
+  border-radius: 5px;
+  border: none;
+  padding: 15px 26px 17px 28px;
+  cursor: pointer;
+}
+
+.call__master__modal .call__master__nonurgent__second__btns .pay__btn span {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
 }
 
 .call__master__modal .call__master__nonurgent__second p {
@@ -584,6 +640,84 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+}
+
+.call__master__modal .call__master__pay h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 27px;
+  margin-top: 0;
+  color: #222222;
+  text-align: center;
+}
+
+.call__master__modal .call__master__pay__price {
+  width: 470px;
+  height: 59px;
+  background: #EDF5FE;
+  border-radius: 10px;
+  padding: 19px 22px;
+  box-sizing: border-box;
+  margin-bottom: 21px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #222222;
+  border: none;
+}
+
+.call__master__modal .call__master__pay__price::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.call__master__modal .call__master__pay h2 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 23px;
+  margin-top: 0;
+  color: #222222;
+  text-align: left;
+}
+
+.call__master__modal .call__master__pay__btn {
+  background: #1117A3;
+  box-shadow: 0px 4px 30px rgba(17, 23, 163, 0.3);
+  border-radius: 5px;
+  width: 470px;
+  padding: 17px 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 36px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.call__master__modal .call__master__pay__btn img {
+  margin-left: 10px;
+}
+
+.call__master__modal .call__master__pay p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #666666;
+  margin: 0;
 }
 
 header {
