@@ -25,56 +25,76 @@ const footer = document.querySelector('footer');
 const menu3 = document.querySelector('.menu3');
 const menu2 = document.querySelector('.menu2');
 
+const allBlocks = document.querySelectorAll('.content__menu__block__box');
+const firstBlock = document.querySelector('.content__menu__block__box.first_block');
+const secondBlock = document.querySelector('.content__menu__block__box.second_block');
+const thirdBlock = document.querySelector('.content__menu__block__box.third_block');
+const fourthBlock = document.querySelector('.content__menu__block__box.fourth_block');
+const fifthBlock = document.querySelector('.content__menu__block__box.fifth_block');
+const sixthBlock = document.querySelector('.content__menu__block__box.sixth_block');
+
+const showMenu = (block, position) => {
+  if(window.innerWidth >= 769){
+    contentMenuBlock3.setAttribute('data-after', position);
+    contentMenu3.style.display = 'block';
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100%";
+    allBlocks.forEach(block => block.classList.remove('active'));
+    block.classList.add('active');
+  }
+};
+
 li1.addEventListener('mouseover',()=>{
     iw1.src = './icon/iw1.svg';
+    showMenu(firstBlock, 'first');
   });
   li1.addEventListener('mouseout',()=>{
     iw1.src = './icon/electrician.svg';
   });
   li2.addEventListener('mouseover',()=>{
     iw2.src = './icon/iw2.svg';
+    showMenu(secondBlock, 'second');
   });
   li2.addEventListener('mouseout',()=>{
     iw2.src = './icon/heating.svg';
   });
   li3.addEventListener('mouseover',()=>{
     iw3.src = './icon/iw3.svg';
-    if(window.innerWidth >= 769){
-    contentMenu3.style.display = 'block';
-    document.body.style.overflow = "hidden";
-    document.body.style.height = "100%";
-    }
+    showMenu(thirdBlock, 'third');
   });
   li3.addEventListener('mouseout',()=>{
     iw3.src = './icon/plumbing.svg';
   });
   li4.addEventListener('mouseover',()=>{
     iw4.src = './icon/iw4.svg';
+    showMenu(fourthBlock, 'fourth');
   });
   li4.addEventListener('mouseout',()=>{
     iw4.src = './icon/washer.svg';
   });
   li5.addEventListener('mouseover',()=>{
     iw5.src = './icon/iw5.svg';
+    showMenu(fifthBlock, 'fifth');
   });
   li5.addEventListener('mouseout',()=>{
     iw5.src = './icon/furniture.svg';
   });
   li6.addEventListener('mouseover',()=>{
     iw6.src = './icon/iw6.svg';
+    showMenu(sixthBlock, 'sixth');
   });
   li6.addEventListener('mouseout',()=>{
     iw6.src = './icon/hammer.svg';
   });
 
 
-  contentMenuBlock3.addEventListener('mouseover',(e)=>{
+  contentMenu3.addEventListener('mouseover',(e)=>{
       if(e.target == document.querySelector('.back_content')){
         contentMenu3.style.display = 'none';
         document.body.style.overflow = "auto";
         document.body.style.height = "auto";
       } 
-  })
+  });
 
   burger.addEventListener('click',()=>{
     chevron.style.display = 'block';
@@ -89,9 +109,8 @@ li1.addEventListener('mouseover',()=>{
       headerMain.style.display = 'none';
     }          
     menu3.style.display = 'none';
-    // menu2.style.display = 'none';
-
   });
+
   clos.addEventListener('click',()=>{
     chevron.style.display = 'none';
     burger.style.display = 'block';
@@ -105,8 +124,6 @@ li1.addEventListener('mouseover',()=>{
       headerMain.style.display = 'block'; 
     }       
     menu3.style.display = 'flex';
-    // menu2.style.display = 'block';    
-
   });
 
 

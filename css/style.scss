@@ -1056,15 +1056,34 @@ select {
         &::after {
             content: '';
             position: absolute;
-            left: 44%;
+            left: 45%;
             top: -20px;
             border: 10px solid transparent;
             border-bottom: 10px solid #F3F4F9;
         }
 
+        &[data-after="first"]::after {
+            left: calc(50% - (450px));
+        }
+        &[data-after="second"]::after {
+            left: calc(50% - (300px));
+        }
+        &[data-after="third"]::after {
+            left: calc(50% - (125px));
+        }
+        &[data-after="fourth"]::after {
+            left: calc(50% + (80px));
+        }
+        &[data-after="fifth"]::after {
+            left: calc(50% + (270px));
+        }
+        &[data-after="sixth"]::after {
+            left: calc(50% + (450px));
+        }
+
         &__box {
             margin: 0 auto;
-            display: flex;
+            display: none;
             justify-content: space-between;
             max-width: 1200px;
 
@@ -1136,6 +1155,9 @@ select {
                     color: #999;
                 }
             }
+        }
+        .active {
+            display: flex;
         }
     }
 }
