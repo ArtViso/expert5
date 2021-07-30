@@ -1,7 +1,6 @@
 const choosebtns =  document.querySelector('.btns');
 const choosebtn2 = document.querySelector('.btn2');
 
-
 const chooseModallBlock = document.querySelector('.call__master__modal');
 const chooseClosedModal = document.querySelector('.call__master__modal .closedModal');
 const chooseModalContent =  document.querySelector('.call__master__modal__content');
@@ -14,10 +13,26 @@ const nonUrgentCallNextButton = document.querySelector('.call__master__nonurgent
 const nonUrgentCallPrevButton = document.querySelector('.call__master__nonurgent__second__btns .prev__btn');
 const urgentPayButton = document.querySelector('.call__master__urgent__btn');
 const nonUrgentPayButton = document.querySelector('.call__master__nonurgent__second__btns .pay__btn');
-
+const payButton = document.querySelector('.call__master__pay__btn');
 
 
 const [choose_left_block, choose_right_block] = document.querySelectorAll('.choose__call__item__block');
+
+let call = null;
+
+const validateModal = modal => {
+    const inputs = modal.querySelectorAll('input[type="text"], textarea');
+    if([...inputs].filter(input => input.value === '').length) {
+        alert('Заполните все поля');
+        return false;
+    }
+    return true;
+}
+
+const clearAllInputs = modal => {
+    const inputs = modal.querySelectorAll('input[type="text"], textarea');
+    inputs.forEach(input => input.value = '');
+}
 
 const showModalChoose = () => { 
     if(window.innerWidth > 651){
@@ -52,6 +67,8 @@ const showModalNonUrgentCallFirst = () => {
 }
 
 const showModalNonUrgentCallSecond = () => {
+    const res = validateModal(nonUrgentCallModalFirst);
+    if(!res) return false; 
     nonUrgentCallModalFirst.style.display = 'none';
     nonUrgentCallModalSecond.style.display = 'block';
 }
@@ -61,10 +78,49 @@ const showModalNonUrgentCallFirstFromSecond = () => {
     nonUrgentCallModalFirst.style.display = 'block';
 }
 
-const showPayModal = () => {
+
+const showPayModal = (isUrgent) => {
+    call = isUrgent ? 'urgent' : 'nonurgent';
+    const res = call === 'urgent' ? validateModal(urgentCallModal) : validateModal(nonUrgentCallModalSecond);
+    if(!res) return false;
     nonUrgentCallModalSecond.style.display = 'none';
     urgentCallModal.style.display = 'none';
     payModal.style.display = 'block';
+}
+
+const payBtnHandler = () => {
+    const payAmount = payModal.querySelector('.call__master__pay__price').value;
+    let result = {};
+    if(+payAmount < 350) {
+        alert('Сумма должна быть больше или равна 350');
+        return false;
+    }
+    result['type'] = call;
+    result['pay_amount'] = payAmount;
+    if(call === 'urgent') {
+        result['reason'] = document.querySelector('.call__master__urgent__reason').value;
+        result['name'] = document.querySelector('.call__master__urgent__name').value;
+        result['phone'] = document.querySelector('.call__master__urgent__phone__input').value.replace(/ /g,'');
+    }
+    else {
+        result['reason'] = document.querySelector('.call__master__nonurgent__first__reason').value;
+        result['address'] = document.querySelector('.call__master__nonurgent__first__address').value;
+        result['date'] = document.querySelector('.call__master__nonurgent__first__date').value;
+        result['time'] = document.querySelector('.call__master__nonurgent__first__time').value;
+        result['name'] = document.querySelector('.call__master__nonurgent__second__name').value;
+        result['phone'] = document.querySelector('.call__master__nonurgent__second__phone__input').value.replace(/ /g,'');
+        result['pay_type'] = document.querySelector('input[name="n_pay"]:checked').value;
+    }
+    clearAllInputs(urgentCallModal);
+    clearAllInputs(nonUrgentCallModalFirst);
+    clearAllInputs(nonUrgentCallModalSecond);
+    clearAllInputs(payModal);
+    console.log(result);
+    payModal.style.display = 'none';
+    chooseModallBlock.style.display = 'none';
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
+    chooseModalContent.style.display = 'block';
 }
 
 choosebtns.addEventListener('click', showModalChoose);
@@ -77,9 +133,9 @@ choose_right_block.addEventListener('mouseenter', chooseOnMouseEnter);
 choose_right_block.addEventListener('mouseleave', chooseOnMouseLeave);
 nonUrgentCallNextButton.addEventListener('click', showModalNonUrgentCallSecond);
 nonUrgentCallPrevButton.addEventListener('click', showModalNonUrgentCallFirstFromSecond);
-urgentPayButton.addEventListener('click', showPayModal);
-nonUrgentPayButton.addEventListener('click', showPayModal);
-
+urgentPayButton.addEventListener('click', showPayModal.bind(null, true));
+nonUrgentPayButton.addEventListener('click', showPayModal.bind(null, false));
+payButton.addEventListener('click', payBtnHandler);
 
 function chooseOnMouseEnter(){
     this.style.backgroundColor = "#1117A3";
