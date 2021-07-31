@@ -12,6 +12,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="call__master__modal">
+        <img src="./img/closedModal.png" class="closedModal" alt="">
+        <div class="call__master__modal__content">
+            <h1>Вызвать мастера</h1>
+            <div class="choose__call">
+                <div class="choose__call__item">
+                    <div class="choose__call__item__block">
+                       <img class="default" src="./img/choose_modal_left.png" alt="urgent call">
+                       <img class="white" src="./img/choose_modal_left_white.png" alt="urgent call">
+                    </div>
+                    <p class="choose__call__item__text">Срочно (будет стоить дороже)</p>
+                </div>  
+                <div class="choose__call__item">
+                    <div class="choose__call__item__block">
+                        <img class="default"  src="./img/choose_modal_right.png" alt="not an urgent call">
+                        <img class="white"  src="./img/choose_modal_right_white.png" alt="not an urgent call">
+                    </div>
+                    <p class="choose__call__item__text">Не срочно</p>
+                </div>                 
+            </div>
+        </div>
+        <div class="call__master__urgent">            
+            <h1>Срочный вызов</h1>
+            <textarea class="call__master__urgent__reason name="u_reason" placeholder="Причина вызова. Расскажите, что у вас случилось?"></textarea>
+            <input class="call__master__urgent__name" type="text" name="u_your_name" placeholder="Как вас зовут?">
+            <div class="call__master__urgent__phone">
+                <select name="u_select_phone" class="call__master__urgent__phone__select">
+                    <option value="ua">ua</option>
+                    <option value="ru">ru</option>
+                </select>
+                <input class="call__master__urgent__phone__input" type="text" name="u_your_phone" placeholder="+380 (99) 999-99-99">
+            </div>
+            <button class="call__master__urgent__btn">
+                Вызвать мастера
+            </button>
+            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.</p>
+        </div>
+        <div class="call__master__nonurgent__first">
+            <h1>Несрочный вызов</h1>
+            <h3>Причина вызова</h3>
+            <textarea class="call__master__nonurgent__first__reason" name="n_reason" placeholder="Расскажите, что у вас случилось?"></textarea>
+            <h3>Куда должен приехать мастер?</h3>
+            <input class="call__master__nonurgent__first__address" type="text" name="n_address" placeholder="Например, Киев, ул. Мира 25, кв 1">
+            <h3>В какой день и время?</h3>
+            <input class="call__master__nonurgent__first__date" type="date" name="n_date" value="2021-03-01">
+            <input class="call__master__nonurgent__first__time" type="text" name="n_time" placeholder="Например, с 10:00 до 12:00">
+            <button class="call__master__nonurgent__first__btn">
+               <span>Далее</span> 
+            </button>
+            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.</p>
+        </div>
+        <div class="call__master__nonurgent__second">
+            <h1>Несрочный вызов</h1>
+            <h3>Контактные данные</h3>
+            <input class="call__master__nonurgent__second__name" type="text" name="n_your_name" placeholder="Как вас зовут?">
+            <div class="call__master__nonurgent__second__phone">
+                <select name="n_select_phone" class="call__master__nonurgent__second__phone__select">
+                    <option value="ua">ua</option>
+                    <option value="ru">ru</option>
+                </select>
+                <input class="call__master__nonurgent__second__phone__input" type="text" name="n_your_phone" placeholder="+380 (99) 999-99-99">
+            </div>
+            <h3>Способ оплаты</h3>
+            <label><input type="radio" name="n_pay" class="call__master__nonurgent__second__radio" value="cash" checked> наличные</label>
+            <label><input type="radio" name="n_pay" class="call__master__nonurgent__second__radio" value="cashless"> банковская карта</label>
+            <div class="call__master__nonurgent__second__btns">
+                <button class="prev__btn"><span>Назад</span></button>
+                <button class="pay__btn"><span>Вызвать мастера</span></button>
+            </div>
+            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.</p>
+        </div>
+        <div class="call__master__pay">
+            <h1>Внести предоплату</h1>
+            <input class="call__master__pay__price" type="text" name="p_price" placeholder="Например, 350">
+            <h2>Итого: 350 грн. </h2>
+            <button class="call__master__pay__btn">
+                Оплатить
+                <img src="./img/pay_modal_img.png" alt="pay modal">
+            </button>
+            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.</p>
+        </div>
+    </div>
+
     <header>
         <div class="line">
             <div class="header">
@@ -574,5 +657,7 @@
         </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/choose_modal.js"></script>
+
 </body>
 </html>

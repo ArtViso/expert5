@@ -9,6 +9,9 @@ const nonUrgentCallModalFirst = document.querySelector('.call__master__nonurgent
 const nonUrgentCallModalSecond = document.querySelector('.call__master__nonurgent__second');
 const payModal = document.querySelector('.call__master__pay');
 
+const leftBlockModal = document.querySelector('.column_image_block.left_block');
+const rightBlockModal = document.querySelector('.column_image_block.right_block');
+
 const nonUrgentCallNextButton = document.querySelector('.call__master__nonurgent__first__btn');
 const nonUrgentCallPrevButton = document.querySelector('.call__master__nonurgent__second__btns .prev__btn');
 const urgentPayButton = document.querySelector('.call__master__urgent__btn');
@@ -34,13 +37,26 @@ const clearAllInputs = modal => {
     inputs.forEach(input => input.value = '');
 }
 
+if(leftBlockModal && rightBlockModal) {
+    leftBlockModal.addEventListener('click', ()=>{
+        rightBlockModal.querySelector('.checked').style.display = 'none';
+        leftBlockModal.querySelector('.checked').style.display = 'flex';
+        showModalChoose();
+        showModalUrgentCall();
+    });
+    rightBlockModal.addEventListener('click', ()=>{
+        leftBlockModal.querySelector('.checked').style.display = 'none';
+        rightBlockModal.querySelector('.checked').style.display = 'flex';
+        showModalChoose();
+        showModalNonUrgentCallFirst();
+    });
+}
+
 const showModalChoose = () => { 
-    if(window.innerWidth > 651){
     document.body.style.overflow = "hidden";
     document.body.style.height = "100%";
     chooseModallBlock.style.top = document.documentElement.scrollTop - 20 +'px';
     chooseModallBlock.style.display = 'flex';  
-    } 
 }
 
 chooseModallBlock.addEventListener('click',(e)=>{
@@ -116,6 +132,7 @@ const payBtnHandler = () => {
     clearAllInputs(nonUrgentCallModalSecond);
     clearAllInputs(payModal);
     console.log(result);
+    //send result
     payModal.style.display = 'none';
     chooseModallBlock.style.display = 'none';
     document.body.style.overflow = "auto";
@@ -124,7 +141,11 @@ const payBtnHandler = () => {
 }
 
 choosebtns.addEventListener('click', showModalChoose);
-choosebtn2.addEventListener('click', showModalChoose);
+
+if(choosebtn2) {
+    choosebtn2.addEventListener('click', showModalChoose);
+}
+
 choose_left_block.addEventListener('mouseenter', chooseOnMouseEnter);
 choose_left_block.addEventListener('mouseleave', chooseOnMouseLeave);
 choose_left_block.addEventListener('click', showModalUrgentCall);
