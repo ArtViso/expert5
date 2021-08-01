@@ -2609,7 +2609,6 @@ footer {
             font-weight: normal;
             font-size: 18px;
             color: #666666;
-            // width: 40%;
         }
 
         .contact_children {
@@ -2786,7 +2785,6 @@ footer {
                     width: 48%;
 
                     .column_image_block {
-                        // width: 60%;
                         max-width: 300px;
                         max-height: 211px;
                         height: 211px;
@@ -2955,8 +2953,6 @@ footer {
     position: relative;
     padding-top: 70px;
     margin-top: 70px;
-
-    // padding-top: 200px;
     #comment_1 {
         background-color: #E6E8F6;
     }
@@ -3044,7 +3040,6 @@ footer {
                 filter: drop-shadow(0px 4px 50px rgba(17, 23, 163, 0.4));
                 display: flex;
                 flex-direction: row;
-                // gap: 12px;
                 padding: 17px 32px 17px 32px;
                 justify-content: center;
                 align-items: center;
@@ -3065,7 +3060,6 @@ footer {
         .right_comments {
             display: flex;
             flex-direction: column;
-            // gap: 25px;
             width: 40%;
         }
 
@@ -3203,9 +3197,6 @@ footer {
 
         .item_2 {
             background-image: url(../img/blog_gi_2.png);
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // backgrro
         }
 
         .item_3 {
@@ -3227,7 +3218,6 @@ footer {
             font-weight: 600;
             font-size: 13px;
             color: #333333;
-            // padding: 10px;
             padding: 5px 15px 5px 15px;
         }
 
@@ -3686,7 +3676,6 @@ footer {
         width: 100%;
         z-index: 5;
         background-color: white;
-        // margin-bottom: 5%;
     }
 
     .section__two__block {
@@ -4898,7 +4887,6 @@ footer {
             .right_side_comment,
             .left_side_comment {
                 max-width: 470px;
-                // margin-left: 70px;
                 margin: 20px auto;
             }
 
@@ -5069,7 +5057,6 @@ footer {
 
             &_text {
                 padding-left: 5px;
-                // margin-top: 150px;
                 width: 90%;
                 font-size: 15px;
 
@@ -5187,18 +5174,12 @@ footer {
             padding: 0;
             padding-top: 20px;
 
-            // padding-left: 37px;
-            // padding-right: 37px;
             &_item {
                 box-sizing: border-box;
                 height: 315px;
                 width: 300px;
                 margin: 0 auto;
             }
-
-            // .blog_gi_1 {
-            //     background-image: url(./img/blog_gi_1_small.png);
-            // }
 
             .wide_item {
                 grid-column: 1;

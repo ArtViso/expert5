@@ -131,8 +131,7 @@ const payBtnHandler = () => {
     clearAllInputs(nonUrgentCallModalFirst);
     clearAllInputs(nonUrgentCallModalSecond);
     clearAllInputs(payModal);
-    console.log(result);
-    //send result
+
     payModal.style.display = 'none';
     chooseModallBlock.style.display = 'none';
     document.body.style.overflow = "auto";
