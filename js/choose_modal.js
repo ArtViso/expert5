@@ -140,7 +140,9 @@ const payBtnHandler = () => {
     chooseModalContent.style.display = 'block';
 }
 
-choosebtns.addEventListener('click', showModalChoose);
+if(choosebtns) {
+    choosebtns.addEventListener('click', showModalChoose);
+}
 
 if(choosebtn2) {
     choosebtn2.addEventListener('click', showModalChoose);

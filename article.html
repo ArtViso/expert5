@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="call__master__modal">
         <img src="./img/closedModal.png" class="closedModal" alt="">
@@ -19,69 +21,81 @@
             <div class="choose__call">
                 <div class="choose__call__item">
                     <div class="choose__call__item__block">
-                       <img class="default" src="./img/choose_modal_left.png" alt="urgent call">
-                       <img class="white" src="./img/choose_modal_left_white.png" alt="urgent call">
+                        <img class="default" src="./img/choose_modal_left.png" alt="urgent call">
+                        <img class="white" src="./img/choose_modal_left_white.png" alt="urgent call">
                     </div>
                     <p class="choose__call__item__text">Срочно (будет стоить дороже)</p>
-                </div>  
+                </div>
                 <div class="choose__call__item">
                     <div class="choose__call__item__block">
-                        <img class="default"  src="./img/choose_modal_right.png" alt="not an urgent call">
-                        <img class="white"  src="./img/choose_modal_right_white.png" alt="not an urgent call">
+                        <img class="default" src="./img/choose_modal_right.png" alt="not an urgent call">
+                        <img class="white" src="./img/choose_modal_right_white.png" alt="not an urgent call">
                     </div>
                     <p class="choose__call__item__text">Не срочно</p>
-                </div>                 
+                </div>
             </div>
         </div>
-        <div class="call__master__urgent">            
+        <div class="call__master__urgent">
             <h1>Срочный вызов</h1>
-            <textarea class="call__master__urgent__reason name="u_reason" placeholder="Причина вызова. Расскажите, что у вас случилось?"></textarea>
+            <textarea class="call__master__urgent__reason name=" u_reason"
+                placeholder="Причина вызова. Расскажите, что у вас случилось?"></textarea>
             <input class="call__master__urgent__name" type="text" name="u_your_name" placeholder="Как вас зовут?">
             <div class="call__master__urgent__phone">
                 <select name="u_select_phone" class="call__master__urgent__phone__select">
                     <option value="ua">ua</option>
                     <option value="ru">ru</option>
                 </select>
-                <input class="call__master__urgent__phone__input" type="text" name="u_your_phone" placeholder="+380 (99) 999-99-99">
+                <input class="call__master__urgent__phone__input" type="text" name="u_your_phone"
+                    placeholder="+380 (99) 999-99-99">
             </div>
             <button class="call__master__urgent__btn">
                 Вызвать мастера
             </button>
-            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.</p>
+            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.
+            </p>
         </div>
         <div class="call__master__nonurgent__first">
             <h1>Несрочный вызов</h1>
             <h3>Причина вызова</h3>
-            <textarea class="call__master__nonurgent__first__reason" name="n_reason" placeholder="Расскажите, что у вас случилось?"></textarea>
+            <textarea class="call__master__nonurgent__first__reason" name="n_reason"
+                placeholder="Расскажите, что у вас случилось?"></textarea>
             <h3>Куда должен приехать мастер?</h3>
-            <input class="call__master__nonurgent__first__address" type="text" name="n_address" placeholder="Например, Киев, ул. Мира 25, кв 1">
+            <input class="call__master__nonurgent__first__address" type="text" name="n_address"
+                placeholder="Например, Киев, ул. Мира 25, кв 1">
             <h3>В какой день и время?</h3>
             <input class="call__master__nonurgent__first__date" type="date" name="n_date" value="2021-03-01">
-            <input class="call__master__nonurgent__first__time" type="text" name="n_time" placeholder="Например, с 10:00 до 12:00">
+            <input class="call__master__nonurgent__first__time" type="text" name="n_time"
+                placeholder="Например, с 10:00 до 12:00">
             <button class="call__master__nonurgent__first__btn">
-               <span>Далее</span> 
+                <span>Далее</span>
             </button>
-            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.</p>
+            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.
+            </p>
         </div>
         <div class="call__master__nonurgent__second">
             <h1>Несрочный вызов</h1>
             <h3>Контактные данные</h3>
-            <input class="call__master__nonurgent__second__name" type="text" name="n_your_name" placeholder="Как вас зовут?">
+            <input class="call__master__nonurgent__second__name" type="text" name="n_your_name"
+                placeholder="Как вас зовут?">
             <div class="call__master__nonurgent__second__phone">
                 <select name="n_select_phone" class="call__master__nonurgent__second__phone__select">
                     <option value="ua">ua</option>
                     <option value="ru">ru</option>
                 </select>
-                <input class="call__master__nonurgent__second__phone__input" type="text" name="n_your_phone" placeholder="+380 (99) 999-99-99">
+                <input class="call__master__nonurgent__second__phone__input" type="text" name="n_your_phone"
+                    placeholder="+380 (99) 999-99-99">
             </div>
             <h3>Способ оплаты</h3>
-            <label><input type="radio" name="n_pay" class="call__master__nonurgent__second__radio" value="cash" checked> наличные</label>
-            <label><input type="radio" name="n_pay" class="call__master__nonurgent__second__radio" value="cashless"> банковская карта</label>
+            <label><input type="radio" name="n_pay" class="call__master__nonurgent__second__radio" value="cash" checked>
+                наличные</label>
+            <label><input type="radio" name="n_pay" class="call__master__nonurgent__second__radio" value="cashless">
+                банковская карта</label>
             <div class="call__master__nonurgent__second__btns">
                 <button class="prev__btn"><span>Назад</span></button>
                 <button class="pay__btn"><span>Вызвать мастера</span></button>
             </div>
-            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.</p>
+            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.
+            </p>
         </div>
         <div class="call__master__pay">
             <h1>Внести предоплату</h1>
@@ -91,7 +105,8 @@
                 Оплатить
                 <img src="./img/pay_modal_img.png" alt="pay modal">
             </button>
-            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.</p>
+            <p>Стоимость вызова мастера <b>350 грн.</b> Ремонтные работы оплачиваются отдельно и не входят в стоимость.
+            </p>
         </div>
     </div>
 
@@ -164,12 +179,13 @@
                     <img src="./img/close.png" alt="">
                 </div>
                 <div class="btn__call">
-                    <button class="btn6">Вызвать мастера</button>
+                    <button class="btn6 bopen">Войти</button>
+                    <button class="btn6">Зарегистрироваться</button>
                 </div>
             </ul>
         </div>
         <div class="content__menu">
-            <div class="content__menu__block" data-after="45%" >
+            <div class="content__menu__block" data-after="45%">
                 <div class="back_content"></div>
                 <div class="content__menu__block__box first_block">
                     <div class="content__menu__block__box__content1">
@@ -343,7 +359,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="content__menu__block__box fourth_block">
                     <div class="content__menu__block__box__content1">
                     </div>
@@ -463,7 +479,7 @@
 
             </div>
         </div>
-        
+
     </header>
     <main>
         <section class="article_section">
@@ -483,27 +499,48 @@
                         <div class="article_main_info">
                             <span class="date">23 июня</span> • <span class="time_to_read">5 минут на прочтение</span>
                         </div>
-                        <p class="article_main_default_text">Допустим, вы счастливый владелец квартиры, которую купили в качестве инвестиции в будущее, чтобы сдавать в аренду. Как сделать ремонт в таком жилье, чтобы затем не было проблем, а квартиранты оставались довольны? Сайт RMNT расскажет вам об основных принципах ремонта в квартире под сдачу в аренду.</p>
+                        <p class="article_main_default_text">Допустим, вы счастливый владелец квартиры, которую купили в
+                            качестве инвестиции в будущее, чтобы сдавать в аренду. Как сделать ремонт в таком жилье,
+                            чтобы затем не было проблем, а квартиранты оставались довольны? Сайт RMNT расскажет вам об
+                            основных принципах ремонта в квартире под сдачу в аренду.</p>
                         <div class="article_main_image">
                             <img src="./img/article_remont.png" alt="Image in article">
                         </div>
-                        <p><b>У обстановки квартиры, которую вы планируете сдавать в аренду посуточно, есть свои нюансы:</b></p>
+                        <p><b>У обстановки квартиры, которую вы планируете сдавать в аренду посуточно, есть свои
+                                нюансы:</b></p>
                         <ul>
-                            <li>Минимум открытых полок и мелких предметов декора — наряду с коврами, от которых советуем избавиться вообще — это главные пылесборники.</li>
+                            <li>Минимум открытых полок и мелких предметов декора — наряду с коврами, от которых советуем
+                                избавиться вообще — это главные пылесборники.</li>
                             <li>Кухня с большим количеством бытовой техники и огромный холодильник не нужны.</li>
-                            <li>Останавливаясь на сутки или пару дней, вряд ли жильцы будут уделять много времени готовке.</li>
-                            <li>Много шкафов тоже не нужно, а вот о стойке для открытого чемодана советуем позаботиться.</li>
+                            <li>Останавливаясь на сутки или пару дней, вряд ли жильцы будут уделять много времени
+                                готовке.</li>
+                            <li>Много шкафов тоже не нужно, а вот о стойке для открытого чемодана советуем позаботиться.
+                            </li>
                         </ul>
                         <p class="article_main_important_text">
-                            Важно! Чтобы уменьшить риск проблем с соседями, задумайтесь о звукоизоляции. Пусть будет. Это дополнительные затраты, согласны, но они окупятся, если квартиранты вам попадутся шумные.
+                            Важно! Чтобы уменьшить риск проблем с соседями, задумайтесь о звукоизоляции. Пусть будет.
+                            Это дополнительные затраты, согласны, но они окупятся, если квартиранты вам попадутся
+                            шумные.
                         </p>
-                        <p><b>Констатируем:</b> ремонт квартиры под сдачу в аренду — это практически всегда достаточно бюджетный проект, универсальный, нацеленный не на индивидуальность, а на выполнение своих функций. В таких квартирах не встретишь паркет на полу и дизайнерскую мебель, яркий декор и обилие милых вещиц. Всё очень практично, рассчитано на длительный срок службы и небрежное отношение со стороны временных обитателей.</p>
+                        <p><b>Констатируем:</b> ремонт квартиры под сдачу в аренду — это практически всегда достаточно
+                            бюджетный проект, универсальный, нацеленный не на индивидуальность, а на выполнение своих
+                            функций. В таких квартирах не встретишь паркет на полу и дизайнерскую мебель, яркий декор и
+                            обилие милых вещиц. Всё очень практично, рассчитано на длительный срок службы и небрежное
+                            отношение со стороны временных обитателей.</p>
                         <h3>Посуточно или помесячно?</h3>
-                        <p>Ремонт квартиры для сдачи в аренду зависит от бизнес-стратегии. Сегодня заработать на краткосрочной аренде через сервисы вроде Airbnb можно больше, чем на помесячной. Но такое жилье и обставлять следует иначе. Основных отличий несколько:</p>
+                        <p>Ремонт квартиры для сдачи в аренду зависит от бизнес-стратегии. Сегодня заработать на
+                            краткосрочной аренде через сервисы вроде Airbnb можно больше, чем на помесячной. Но такое
+                            жилье и обставлять следует иначе. Основных отличий несколько:</p>
                         <ol>
-                            <li><b>Не нужна полноценная кухня</b> со всей техникой. Обычно путешественники вообще мало времени уделяют готовке. Они не хранят запасов бакалеи, им не нужно место для парадного сервиза и сковородки вок.</li>
-                            <li><b>Не нужно много шкафов —</b> достаточно одного. Куда важнее стойка для раскрытого чемодана. В квартире для долгосрочной аренды заказчикам нужно хранить много вещей — обычно делают встроенные шкафы, кладовку.</li>
-                            <li><b>Стиральная машинка может быть «на виду» —</b> на кухне, например. Тогда как в квартире для долгосрочной аренды комфортнее организовать постирочную (стирку, сушку, место для разложенной гладильной доски).</li>
+                            <li><b>Не нужна полноценная кухня</b> со всей техникой. Обычно путешественники вообще мало
+                                времени уделяют готовке. Они не хранят запасов бакалеи, им не нужно место для парадного
+                                сервиза и сковородки вок.</li>
+                            <li><b>Не нужно много шкафов —</b> достаточно одного. Куда важнее стойка для раскрытого
+                                чемодана. В квартире для долгосрочной аренды заказчикам нужно хранить много вещей —
+                                обычно делают встроенные шкафы, кладовку.</li>
+                            <li><b>Стиральная машинка может быть «на виду» —</b> на кухне, например. Тогда как в
+                                квартире для долгосрочной аренды комфортнее организовать постирочную (стирку, сушку,
+                                место для разложенной гладильной доски).</li>
                         </ol>
                         <div class="article_main_share">
                             <p>Поделиться статьей</p>
@@ -525,7 +562,7 @@
                                 <button>Советы</button>
                                 <button>Кухня</button>
                                 <button>Детская комната</button>
-                            </div> 
+                            </div>
                         </div>
                         <div class="mobile_app_add">
                             <div class="main_part">
@@ -537,17 +574,17 @@
                                     <img src="./img/large_gp.png" alt="google play link">
                                     <img src="./img/large_ap.png" alt="app store link">
                                 </div>
-                            </div>                        
+                            </div>
                             <div class="mobile_app_man">
                                 <img src="./img/article_add_man_large.png" alt="man" id="article_default_man">
                                 <img src="./img/article_add_man_tablet.png" alt="man tablet" id="article_tablet_man">
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="read_more">
                     <h3>Читать ещё</h3>
-                    <div class="read_more_all">                       
+                    <div class="read_more_all">
                         <div class="read_more_all_item">
                             <div class="read_more_all_item_tag">Советы</div>
                             <div class="read_more_all_item_text">Тёплый или холодный свет: какой лучше для интерьера
@@ -555,34 +592,42 @@
                         </div>
                         <div class="read_more_all_item">
                             <div class="read_more_all_item_tag">Советы</div>
-                            <div class="read_more_all_item_text">Как разместить сантехнику в ванной комнате и ни о чём не пожалеть</div>
+                            <div class="read_more_all_item_text">Как разместить сантехнику в ванной комнате и ни о чём
+                                не пожалеть</div>
                         </div>
                     </div>
                 </div>
                 <div class="article_comments">
                     <h3>Комментарии</h3>
-                    <textarea name="article_new_comment" class="article_new_comment" placeholder="Ваш комментарий" ></textarea>
+                    <textarea name="article_new_comment" class="article_new_comment"
+                        placeholder="Ваш комментарий"></textarea>
                     <!-- <input type="text" name="article_new_comment" class="article_new_comment" placeholder="Ваш комментарий" /> -->
                     <button class="article_comment_btn">Написать комментарий</button>
                     <div class="comments_list">
                         <div class="comments_list_item">
-                            <div class="comments_list_item_text">Спасли мой праздник! У нас пропал свет в пятницу вечером. Жек и аварийка даже трубку не брали. Звонила в 22.00 и даже не думала что кто-то может приехать. Через 45 минут мастер был на месте. Буквально 15-20 минут и свет уже работал. Счастью не было предела. Огромное спасибо за оперативность! Всем советую!</div>
+                            <div class="comments_list_item_text">Спасли мой праздник! У нас пропал свет в пятницу
+                                вечером. Жек и аварийка даже трубку не брали. Звонила в 22.00 и даже не думала что
+                                кто-то может приехать. Через 45 минут мастер был на месте. Буквально 15-20 минут и свет
+                                уже работал. Счастью не было предела. Огромное спасибо за оперативность! Всем советую!
+                            </div>
                             <div class="comments_list_item_author">Анастасия</div>
                             <div class="comments_list_item_avatar">
                                 <img src="./img/comment_1.png" alt="comment author's avatar">
                             </div>
                         </div>
                         <div class="comments_list_item">
-                            <div class="comments_list_item_text">Удивило что мастер одел бахилы! Приехал молодой парень, были сомнения по поводу опытности мастера из за молодого возраста. Но Михаил быстро нашел причину поломки. Спасибо буду рекомендовать вас знакомым.</div>
+                            <div class="comments_list_item_text">Удивило что мастер одел бахилы! Приехал молодой парень,
+                                были сомнения по поводу опытности мастера из за молодого возраста. Но Михаил быстро
+                                нашел причину поломки. Спасибо буду рекомендовать вас знакомым.</div>
                             <div class="comments_list_item_author">Виктор</div>
                             <div class="comments_list_item_avatar">
                                 <img src="./img/comment_3.png" alt="comment author's avatar">
                             </div>
                         </div>
                     </div>
-                </div>              
+                </div>
             </div>
- 
+
         </section>
     </main>
     <footer>
@@ -660,4 +705,5 @@
     <script src="./js/choose_modal.js"></script>
 
 </body>
+
 </html>
